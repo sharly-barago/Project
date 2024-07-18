@@ -1,0 +1,169 @@
+#dashboardMainContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard_sidebar {
+    width: 20%;
+    /* background: rgba(14, 31, 14, 0.954); */
+    background-image: linear-gradient(to bottom right, #0e1f0ef3, #29514df3);
+    height: 100vh;
+    padding: 0;
+    transition: width 0.3s ease;
+}
+
+.dashboard_logo {
+    color: #eeedbd;
+    text-align: center;
+}
+
+.dashboard_sidebar_user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px 0; */
+    text-align: center;
+    position: relative;
+    /* padding-bottom: 20px; */
+}
+
+/* .dashboard_sidebar_user img {
+    width: 60px;
+    display: inline-block;
+    border-radius: 10%;
+    border: 2px solid #13cd02;
+    vertical-align: middle;
+    margin-right: 4px;
+} */
+
+.dashboard_sidebar_user span {
+    top: 20%;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.dashboard_topNav {
+    color: darkgreen;
+    padding: 20px;
+}
+
+.dashboard_topNav a {
+    color: darkgreen;
+    font-size: 20px;
+}
+
+#logoutBtn {
+    float: right;
+}
+
+.dashboard_menu_lists {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.dashboard_menu_lists li {
+    padding: 15px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.dashboard_menu_lists li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+}
+
+.dashboard_menu_lists li a:hover {
+    color: #fff;
+}
+
+.dashboard_menu_lists li:hover {
+    background: rgba(186, 174, 83, 0.444);
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dashboard_logo img {
+    width: 100%;
+    transition: width 0.3s, padding 0.3s;
+    max-width: 100%;
+    height: auto;
+}
+
+#logoImage {
+    padding: 38px 40px 40px 28px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.601);
+    margin-bottom: 25px;
+    transition: width 0.3s ease, padding 0.3s ease;
+}
+
+/* When sidebar is closed */
+.dashboard_sidebar.closed {
+    width: 6%;
+}
+
+.sidebar-icon {
+    font-size: 18px;
+    /* Adjust this value as needed */
+    transition: font-size 0.3s;
+}
+
+.dashboard_sidebar.closed .sidebar-icon {
+    font-size: 24px;
+    /* Make icons bigger when sidebar is closed */
+}
+
+/* Center icons when sidebar is closed */
+.dashboard_sidebar.closed .dashboard_menu_lists li {
+    transition: padding 0.3s ease, text-align 0.3s ease;
+    text-align: center;
+}
+
+.dashboard_sidebar.closed .dashboard_menu_lists li a {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.menuText {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-menu {
+    background-color: rgba(11, 21, 2, 0.985);
+    border: none;
+    border-radius: 3%;
+    width: 80%;
+    margin: 0;
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: rgba(186, 174, 83, 0.444);
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #baae53;
+}
+
+/* For when sidebar is closed */
+.dashboard_sidebar.closed .dropdown-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-top: 0;
+}
